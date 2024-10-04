@@ -1,0 +1,5 @@
+*.log
+*.gcda
+*.gcno
+*.pyc
+venv*
