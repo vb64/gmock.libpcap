@@ -120,6 +120,10 @@ public:
     virtual void close(
       pcap_t *handle
     ) = 0;
+
+    virtual void breakloop(
+      pcap_t *handle
+    ) = 0;
 };
 
 #endif

@@ -31,6 +31,7 @@ public:
     MOCK_METHOD(void, freecode, (struct bpf_program *filter_compiled), (override));
     MOCK_METHOD(int, sendpacket, (pcap_t *handle, const u_char *buf, int size), (override));
     MOCK_METHOD(void, close, (pcap_t *handle), (override));
+    MOCK_METHOD(void, breakloop, (pcap_t *handle), (override));
 };
 
 #endif

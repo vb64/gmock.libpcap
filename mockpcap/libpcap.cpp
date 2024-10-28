@@ -158,5 +158,12 @@ void Pcap::close(
     return close(handle);
 }
 
+void Pcap::breakloop(
+  pcap_t *handle
+) {
+    return pcap_breakloop(handle);
+}
+
+
 Pcap pcap_wrapper;
 PcapLib *pcap = &pcap_wrapper;

@@ -113,4 +113,8 @@ public:
     void close(
       pcap_t *handle
     );
+
+    void breakloop(
+      pcap_t *handle
+    );
 };
